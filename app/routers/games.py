@@ -4,7 +4,7 @@ router = APIRouter()
 
 # Get a game by ID
 @router.get("/games/{game_id}")
-async def get_game(game_id: int):
+async def get_game(game_id: str):
     return {"game_id": game_id}
 
 # Create a game
